@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#7d2a17">
+<title>แพลนเที่ยวญี่ปุ่น 29 พ.ย. – 6 ธ.ค.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#24170f;--soft:#4d3d31;--paper:#fffdf9;--line:#e4d6c4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:125%;scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html[data-size="2"]{font-size:145%}
+html[data-size="3"]{font-size:165%}
+body{font-family:Sarabun,"Noto Sans Thai",Tahoma,sans-serif;font-size:1rem;line-height:1.65;color:var(--ink);overflow-wrap:anywhere;
+ background:linear-gradient(180deg,#f8ecdd 0%,#f6f0e6 45%,#e8eef4 100%)}
+.hero{position:relative;overflow:hidden;text-align:center;color:#fff;padding:2.2rem 1rem 4rem;
+ background:linear-gradient(120deg,#7d1d14 0%,#93400f 38%,#4b5348 66%,#2d4a72 100%)}
+.hero h1{position:relative;font-size:2rem;line-height:1.35;font-weight:800}
+.hero p{position:relative;font-size:1.1rem;font-weight:600;margin-top:.4rem}
+.hero .deco{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .hills{position:absolute;left:0;bottom:-1px;width:100%;height:2.6rem}
+main,.tools,.days{max-width:46rem;margin:0 auto;padding-left:.8rem;padding-right:.8rem}
+.tools{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;align-items:center;padding-top:.8rem}
+.tools span{font-weight:700}
+.tools button{font-family:inherit;font-weight:700;font-size:1rem;line-height:1.2;min-height:2.8rem;padding:.5rem 1rem;border-radius:999px;border:2px solid #6b4a33;background:var(--paper);color:var(--ink);cursor:pointer}
+.tools button[aria-pressed="true"]{background:#5a3520;border-color:#5a3520;color:#fff}
+.pick{text-align:center;font-size:1.15rem;margin:1.1rem 0 .5rem}
+.days{display:grid;grid-template-columns:repeat(2,1fr);gap:.55rem}
+.days a{display:block;text-align:center;text-decoration:none;color:#fff;background:var(--c);border-radius:.9rem;padding:.65rem .3rem;line-height:1.35;box-shadow:0 2px 6px #0002}
+.days b{display:block;font-size:1.25rem}
+.days a.today{outline:4px solid #f5b301;outline-offset:2px}
+.days a.today span::after{content:" • วันนี้"}
+@media(min-width:600px){.days{grid-template-columns:repeat(4,1fr)}}
+.day{margin-top:1.8rem;background:var(--paper);border-radius:1.1rem;overflow:hidden;box-shadow:0 4px 18px #3a20101f;scroll-margin-top:.5rem;padding-bottom:1rem}
+.day>header{background:var(--c);color:#fff;padding:1rem 1.1rem}
+.day h2{font-size:1.4rem;line-height:1.4}
+.num{font-size:.85rem;font-weight:600}
+.sub{font-size:1.05rem;font-weight:600}
+.list{list-style:none}
+.item{padding:1rem 1.1rem;border-bottom:2px solid var(--line)}
+.time{font-size:1.35rem;font-weight:800;color:var(--c);line-height:1.4}
+.time small{font-size:.75em}
+.time{white-space:nowrap}
+.time.none{font-size:.9rem;font-weight:600;color:var(--soft)}
+.what h3{font-size:1.15rem;line-height:1.55;font-weight:700}
+.what h3.empty{font-weight:400;color:var(--soft)}
+.place{margin-top:.25rem;color:var(--soft)}
+.map{display:flex;align-items:center;justify-content:center;gap:.4rem;margin-top:.7rem;min-height:3rem;padding:.4rem 1rem;border-radius:.8rem;background:var(--c);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem}
+.map svg{width:1.3em;height:1.3em;fill:currentColor;flex:none}
+@media(min-width:700px){
+ .item{display:grid;grid-template-columns:10.8rem 1fr;gap:1rem;padding:1.1rem 1.4rem}
+ .map{display:inline-flex}
+ .hero h1{font-size:2.5rem}
+}
+.shops{margin:1.2rem .8rem 0;padding:1rem;border:2px solid var(--line);border-radius:1rem;background:#faf3e8}
+.shops>h3{font-size:1.2rem;line-height:1.5;margin-bottom:.4rem;color:var(--c)}
+.shop{background:var(--paper);border-radius:.8rem;padding:.9rem;margin-top:.8rem;border-left:.4rem solid var(--c)}
+.shop h4{font-size:1.1rem;line-height:1.45}
+.shop p{margin-top:.4rem}
+.meta{display:flex;flex-wrap:wrap;gap:.35rem}
+.meta span{background:#f1e5d4;border-radius:999px;padding:.05rem .7rem;font-size:.9rem;font-weight:600}
+.note{font-size:.9rem;color:var(--soft);margin-top:.6rem}
+.top{display:block;width:fit-content;margin:1rem auto 0;min-height:2.8rem;padding:.45rem 1.2rem;border-radius:999px;border:2px solid var(--c);color:var(--c);text-decoration:none;font-weight:700}
+a:focus-visible,button:focus-visible{outline:4px solid #f5b301;outline-offset:2px}
+footer{text-align:center;padding:2rem 1rem 3rem;color:#33415a;font-weight:600}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.tools,.days,.pick,.top,.hero .deco,.hero .hills{display:none}.hero{background:none;color:#000;padding:0}.day{box-shadow:none}.item,.shop{break-inside:avoid}
+ .day>header,.map{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<path id="leaf" d="M0-20 4-9 11-13 9-3 20-5 14 3 17 7 6 8 7 15 1 11 1 21-1 21-1 11-7 15-6 8-17 7-14 3-20-5-9-3-11-13-4-9Z"/>
+<g id="flake" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M0-12V12M-10-6 10 6M-10 6 10-6M-3-10 0-7 3-10M-3 10 0 7 3 10"/></g>
+</defs></svg>
+<header class="hero">
+<svg class="deco" aria-hidden="true">
+<svg x="7%" y="22%" overflow="visible"><use href="#leaf" fill="#f6a23a" transform="rotate(-25) scale(1.2)"/></svg>
+<svg x="14%" y="68%" overflow="visible"><use href="#leaf" fill="#e5602f" transform="rotate(30) scale(.8)"/></svg>
+<svg x="3%" y="55%" overflow="visible"><use href="#leaf" fill="#f3c34c" transform="rotate(60) scale(.65)"/></svg>
+<svg x="24%" y="10%" overflow="visible"><use href="#leaf" fill="#d9452b" transform="rotate(15) scale(.55)"/></svg>
+<svg x="93%" y="25%" overflow="visible"><use href="#flake" opacity=".85" transform="scale(1.2)"/></svg>
+<svg x="85%" y="66%" overflow="visible"><use href="#flake" opacity=".7" transform="scale(.8)"/></svg>
+<svg x="77%" y="12%" overflow="visible"><use href="#flake" opacity=".6" transform="scale(.6)"/></svg>
+<svg x="97%" y="64%" overflow="visible"><use href="#flake" opacity=".55" transform="scale(.55)"/></svg>
+</svg>
+<h1>แพลนเที่ยว<wbr>ประเทศญี่ปุ่น</h1>
+<p>29 พฤศจิกายน – 6 ธันวาคม 2569<br>จากใบไม้เปลี่ยนสี สู่ต้นฤดูหนาว</p>
+<svg class="hills" viewBox="0 0 1000 80" preserveAspectRatio="none" aria-hidden="true"><path fill="#f8ecdd" d="M0 80V55Q150 15 320 52T650 40Q820 20 1000 55V80Z"/></svg>
+</header>
+<div class="tools" role="group" aria-label="ขนาดตัวหนังสือ"><span>ขนาดตัวหนังสือ</span>
+<button type="button" data-s="1">ใหญ่</button><button type="button" data-s="2">ใหญ่ขึ้น</button><button type="button" data-s="3">ใหญ่ที่สุด</button></div>
+<p class="pick"><b>แตะเลือกวันที่ต้องการดู</b></p>
+<nav class="days" aria-label="เลือกวัน">
+<a href="#d1129" data-date="2026-11-29" style="--c:#9b2318"><b>29 พ.ย.</b><span>อาทิตย์</span></a>
+<a href="#d1130" data-date="2026-11-30" style="--c:#a63d12"><b>30 พ.ย.</b><span>จันทร์</span></a>
+<a href="#d1201" data-date="2026-12-01" style="--c:#8f4a07"><b>1 ธ.ค.</b><span>อังคาร</span></a>
+<a href="#d1202" data-date="2026-12-02" style="--c:#7a5200"><b>2 ธ.ค.</b><span>พุธ</span></a>
+<a href="#d1203" data-date="2026-12-03" style="--c:#57591f"><b>3 ธ.ค.</b><span>พฤหัสบดี</span></a>
+<a href="#d1204" data-date="2026-12-04" style="--c:#2f5d55"><b>4 ธ.ค.</b><span>ศุกร์</span></a>
+<a href="#d1205" data-date="2026-12-05" style="--c:#2c5578"><b>5 ธ.ค.</b><span>เสาร์</span></a>
+<a href="#d1206" data-date="2026-12-06" style="--c:#33426f"><b>6 ธ.ค.</b><span>อาทิตย์</span></a>
+</nav>
+<main>
+<section class="day" id="d1129" data-date="2026-11-29" style="--c:#9b2318" aria-labelledby="d1129-h">
+<header><p class="num">วันที่ 1 จาก 8</p><h2 id="d1129-h">วันอาทิตย์ที่ 29 พ.ย. 2569</h2><p class="sub">บินสู่ญี่ปุ่น · ชินจุกุ</p></header>
+<ol class="list">
+<li class="item"><p class="time">07:10 - 15:05 <small>น.</small></p><div class="what"><h3>Flight BKK-JP</h3></div></li>
+<li class="item"><p class="time">16:00 <small>น.</small></p><div class="what"><h3>รอรถมารับ</h3></div></li>
+<li class="item"><p class="time">18:00 <small>น.</small></p><div class="what"><h3>เข้าที่พัก</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Ojandon</span></p><a class="map" href="https://maps.app.goo.gl/gWVWetQ6waLn8xje6" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Ojandon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">19:00 <small>น.</small></p><div class="what"><h3>ไปเดินเล่น shinjuku (กินราเมง)</h3><a class="map" href="https://maps.app.goo.gl/ZZHSZsK5y6pvpffT7" target="_blank" rel="noopener" aria-label="เปิดแผนที่ ไปเดินเล่น shinjuku (กินราเมง)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">20:00 <small>น.</small></p><div class="what"><h3>ร้านข้าว yakinikuya sakai</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Yakinikuya SAKAI Shinjuku-kabukicho-ten</span></p><a class="map" href="https://maps.app.goo.gl/j36NWCyau6rmAsnY8" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Yakinikuya SAKAI Shinjuku-kabukicho-ten"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">20:30 <small>น.</small></p><div class="what"><h3>ช้อปปิ้ง atmos Shinjuku</h3><p class="place"><b>สถานที่:</b> <span lang="ja">atmos Shinjuku</span></p><a class="map" href="https://maps.app.goo.gl/onmj2U3UzDjSPkvT9" target="_blank" rel="noopener" aria-label="เปิดแผนที่ atmos Shinjuku"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">21:00 <small>น.</small></p><div class="what"><h3>ช้อปปิ้ง Asics</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Asics</span></p><a class="map" href="https://maps.app.goo.gl/yZcDRA7RRrsRvqPN6" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Asics"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>เข้าที่พัก</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Ojandon</span></p><a class="map" href="https://maps.app.goo.gl/gWVWetQ6waLn8xje6" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Ojandon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+</ol><section class="shops" aria-labelledby="shops-h"><h3 id="shops-h">ร้านรองเท้าวิ่งและอุปกรณ์กีฬา ย่านชินจุกุ</h3><p>ย่านชinjuku มีร้านขายรองเท้าวิ่งและอุปกรณ์กีฬาใหญ่ๆ ที่รวบรวมแบรนด์ดังระดับโลก รวมถึงรุ่นยอดฮิตไว้เพียบครับ โดยจุดที่น่าสนใจมีดังนี้ครับ:</p><article class="shop"><h4 lang="en">Alpen Shinjuku Flagship Store</h4><p class="meta"><span>🛍️ ร้านอุปกรณ์กีฬา</span><span>★ 4.0</span><span>ปิด 22:00 น.</span></p><p>เป็นสวรรค์ของคนรักการวิ่งและสายสปอร์ต เพราะเป็นตึกแฟลกชิปสโตร์ขนาดใหญ่ (ครอบคลุมหลายชั้น B2F–3F) ที่รวบรวมรองเท้าวิ่ง เสื้อผ้า และอุปกรณ์ออกกำลังกายไว้ครบครันที่สุดแห่งหนึ่งในย่านชินจุกุ</p><p>มีสินค้าและแบรนด์ดังให้เลือกละลานตา พร้อมโซนรองเท้าวิ่งโดยเฉพาะที่จัดเต็มทั้งแบรนด์ยอดฮิตและรุ่นออกใหม่</p></article><article class="shop"><h4 lang="en">Sports wear Disc. Alpen Tokyo</h4><p class="meta"><span>🛍️ ร้านอุปกรณ์กีฬา</span><span>★ 4.1</span><span>ปิด 22:00 น.</span></p><p>อีกหนึ่งพิกัดในเครือ Alpen ใกล้สถานีชินจุกุ เน้นจำหน่ายชุดและอุปกรณ์กีฬารวมถึงรองเท้าวิ่งในราคาและโซนส่วนลดที่คุ้มค่า</p><p>เหมาะกับการมาเดินเลือกหาไอเทมออกกำลังกายในราคาสบายกระเป๋า มีตัวเลือกแบรนด์กีฬาหลากหลาย</p></article><article class="shop"><h4 lang="en">OSHMAN’S Shinjuku</h4><p class="meta"><span>🛍️ ร้านอุปกรณ์กีฬา</span><span>★ 3.7</span><span>ปิด 21:00 น.</span></p><p>ตั้งอยู่บนชั้น 6 ของตึก Flags ใกล้สถานีชินจุกุ เป็นร้านมัลติแบรนด์แนวไลฟ์สไตล์และกีฬาที่มีโซนรองเท้าวิ่งคัดสรรรุ่นดีไซน์สวยและเทคโนโลยีสูงมาวางจำหน่าย</p><p>บรรยากาศเดินง่าย มีสินค้าแฟชั่นกีฬาและอุปกรณ์เอาต์ดอร์-วิ่งให้เลือกค่อนข้างครบครัน</p></article><article class="shop"><h4 lang="en">downbeat RUNNING</h4><p class="meta"><span>🛍️ ร้านเสื้อผ้า</span><span>★ 3.4</span><span>ปิด 21:00 น.</span></p><p>ร้านเฉพาะทาง (Specialty Running Store) สำหรับคนรักการวิ่งโดยเฉพาะ ตั้งอยู่ใกล้สถานีชินจุกุ</p><p>เหมาะสำหรับนักวิ่งที่ต้องการคำแนะนำเชิงลึก หรือกำลังมองหารองเท้าวิ่งและอุปกรณ์เทคนิคเฉพาะทางจากคอมมูนิตี้คนรักการวิ่งตัวจริง</p></article><article class="shop"><h4 lang="en">MIZUNO SPORTSTYLE LUMINE EST SHINJUKU</h4><p class="meta"><span>🛍️ ร้านรองเท้า</span><span>★ 5.0</span><span>ปิด 21:00 น.</span></p><p>ตั้งอยู่บนชั้น 5 ของห้าง Lumine Est Shinjuku เน้นแบรนด์ Mizuno ที่ขึ้นชื่อเรื่องเทคโนโลยีซัพพอร์ตและการรองรับแรงกระแทก</p><p>เหมาะกับคนที่สนใจรองเท้าวิ่งหรือสนีกเกอร์สายเทคโนโลยีจากแบรนด์ญี่ปุ่นแท้ๆ ดีไซน์ทันสมัยใส่เที่ยวหรือวิ่งก็ได้</p></article><p class="note">คะแนนและเวลาปิดร้านเป็นข้อมูลที่บันทึกไว้ในแผน ควรตรวจสอบอีกครั้งก่อนไป</p></section>
+<a class="top" href="#top">▲ กลับไปเลือกวัน</a>
+</section>
+<section class="day" id="d1130" data-date="2026-11-30" style="--c:#a63d12" aria-labelledby="d1130-h">
+<header><p class="num">วันที่ 2 จาก 8</p><h2 id="d1130-h">วันจันทร์ที่ 30 พ.ย. 2569</h2><p class="sub">รับรถเช่า · ไปฟูจิ</p></header>
+<ol class="list">
+<li class="item"><p class="time">09:30 <small>น.</small></p><div class="what"><h3>ไปเอารถ NIPPON Rent-A-Car Nishishinjuku</h3><p class="place"><b>สถานที่:</b> <span lang="ja">NIPPON Rent-A-Car Nishishinjuku</span></p><a class="map" href="https://maps.app.goo.gl/u6jUcWqHa1gViXJHA" target="_blank" rel="noopener" aria-label="เปิดแผนที่ NIPPON Rent-A-Car Nishishinjuku"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">11:30 <small>น.</small></p><div class="what"><h3>ถึงฟูจิ</h3></div></li>
+<li class="item"><p class="time">12:00 <small>น.</small></p><div class="what"><h3>กินข้าวปลาไหล uroko</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Uroko</span></p><a class="map" href="https://maps.app.goo.gl/vqLZfYQkkQb6nL6Q7" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Uroko"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">13:00 <small>น.</small></p><div class="what"><h3>กระเช้าลอยฟ้าภูเขาไฟฟูจิ</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Mt. Fuji Panoramic Ropeway</span></p><a class="map" href="https://maps.app.goo.gl/bfWCRGctL1PoSL2c8" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Mt. Fuji Panoramic Ropeway"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">14:00 <small>น.</small></p><div class="what"><h3>เตรียมเข้าที่พัก</h3></div></li>
+<li class="item"><p class="time">15:00 <small>น.</small></p><div class="what"><h3>ออกมาถ่ายรูปและซื้อของ</h3></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>ซื้อของ Ogino</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Ogino</span></p><a class="map" href="https://maps.app.goo.gl/gkA7q4xzjG4qKxRY9" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Ogino"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">18:00 <small>น.</small></p><div class="what"><h3>กลับห้องมาทำกับข้าวกินกัน</h3></div></li>
+</ol>
+<a class="top" href="#top">▲ กลับไปเลือกวัน</a>
+</section>
+<section class="day" id="d1201" data-date="2026-12-01" style="--c:#8f4a07" aria-labelledby="d1201-h">
+<header><p class="num">วันที่ 3 จาก 8</p><h2 id="d1201-h">วันอังคารที่ 1 ธ.ค. 2569</h2><p class="sub">เที่ยวรอบฟูจิและทะเลสาบ</p></header>
+<ol class="list">
+<li class="item"><p class="time">08:30 <small>น.</small></p><div class="what"><h3>ไปวิ่ง</h3></div></li>
+<li class="item"><p class="time">11:00 <small>น.</small></p><div class="what"><h3>ที่ถ่ายรูป Yamanakako Myojinyama Panorama-dai</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Yamanakako Myojinyama Panorama-dai</span></p><a class="map" href="https://maps.app.goo.gl/6EiyotxdhsFiJuVBA" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Yamanakako Myojinyama Panorama-dai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">11:30 <small>น.</small></p><div class="what"><h3>หาข้าวเช้ากิน</h3></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>หาที่เที่ยว ถ่ายรูป Nagaike Water Park</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Nagaike Water Park</span></p><a class="map" href="https://maps.app.goo.gl/yrxBw4KyGrHpxecL9" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Nagaike Water Park"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>หาที่เที่ยว ถ่ายรูป Yamanakako Communication Plaza Kirara</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Yamanakako Communication Plaza Kirara</span></p><a class="map" href="https://maps.app.goo.gl/CKV5riMLEu88i1kM9" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Yamanakako Communication Plaza Kirara"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>Kogamasao Memorial Park</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Kogamasao Memorial Park</span></p><a class="map" href="https://maps.app.goo.gl/tePVDHYam7VbYR1z5" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Kogamasao Memorial Park"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>Honcho 2-chome Shopping District</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Honcho 2-chome Shopping District</span></p><a class="map" href="https://maps.app.goo.gl/dX6ugbewRF4GtYGn7" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Honcho 2-chome Shopping District"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>saiko lake</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Saiko Lake</span></p><a class="map" href="https://maps.app.goo.gl/HFM5SeaktBwnzk2P7" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Saiko Lake"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>ทะเลสาบโชจิ</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Lake Shōji</span></p><a class="map" href="https://maps.app.goo.gl/B4kcmCrpfmgnCMBC8" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Lake Shōji"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>Nakanokura Pass View Point</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Nakanokura Pass View Point</span></p><a class="map" href="https://maps.app.goo.gl/WJ8hWm8gv8YG2E7u5" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Nakanokura Pass View Point"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>ทะเลสาบทะนุกิ</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Lake Tanuki</span></p><a class="map" href="https://maps.app.goo.gl/i4shABf6bd7rbESN9" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Lake Tanuki"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>น้ำตกชิราอิโตะ</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Shiraito Falls</span></p><a class="map" href="https://maps.app.goo.gl/mXxhQRU25DcYJZo4A" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Shiraito Falls"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">17:00 - 20:30 <small>น.</small></p><div class="what"><h3>Maruyoshi</h3><a class="map" href="https://maps.app.goo.gl/29TUg6q9TyiSxoEz7" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Maruyoshi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+</ol>
+<a class="top" href="#top">▲ กลับไปเลือกวัน</a>
+</section>
+<section class="day" id="d1202" data-date="2026-12-02" style="--c:#7a5200" aria-labelledby="d1202-h">
+<header><p class="num">วันที่ 4 จาก 8</p><h2 id="d1202-h">วันพุธที่ 2 ธ.ค. 2569</h2><p class="sub">เมืองอิโต · ภูเขาโอมุโระ</p></header>
+<ol class="list">
+<li class="item"><p class="time">08:30 <small>น.</small></p><div class="what"><h3>เตรียมออกเดินทาง</h3></div></li>
+<li class="item"><p class="time">11:30 <small>น.</small></p><div class="what"><h3>กินข้าว</h3></div></li>
+<li class="item"><p class="time">13:00 <small>น.</small></p><div class="what"><h3>ถึง ito กินข้าว  Gyorakutei</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Gyorakutei</span></p><a class="map" href="https://maps.app.goo.gl/n4VwUxDLQCbctJQU7" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Gyorakutei"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">14:30 <small>น.</small></p><div class="what"><h3>Bullet Mt. Omuro: นั่งแชร์ลิฟต์ขึ้นยอดเขาโอมุโระทรงชามคว่ำ ชมวิวทะเลและภูเขาแบบ 360 องศา</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Mount Omuro Climbing Chairlifts</span></p><a class="map" href="https://maps.app.goo.gl/e8fk3iQ4H4Dr9jT59" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Mount Omuro Climbing Chairlifts"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">15:30 <small>น.</small></p><div class="what"><h3>Bullet Izu Shaboten Zoo: สวนสัตว์ติดเขาโอมุโระ ชมคาปิบาราแช่ออนเซ็นช่วงฤดูหนาว (เดินง่าย ลานราบ)</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Izu Shaboten Zoo</span></p><a class="map" href="https://maps.app.goo.gl/6J2jf4FUvmeNThUK8" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Izu Shaboten Zoo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">16:00 <small>น.</small></p><div class="what"><h3>เข้าที่พัก</h3><p class="place"><b>สถานที่:</b> <span lang="ja">252 Akazawa</span></p><a class="map" href="https://maps.app.goo.gl/SBKma5YoRNAfm3Vv8" target="_blank" rel="noopener" aria-label="เปิดแผนที่ 252 Akazawa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">17:00 <small>น.</small></p><div class="what"><h3>ออกมาหาข้าวกิน</h3></div></li>
+</ol>
+<a class="top" href="#top">▲ กลับไปเลือกวัน</a>
+</section>
+<section class="day" id="d1203" data-date="2026-12-03" style="--c:#57591f" aria-labelledby="d1203-h">
+<header><p class="num">วันที่ 5 จาก 8</p><h2 id="d1203-h">วันพฤหัสบดีที่ 3 ธ.ค. 2569</h2><p class="sub">สะพานแขวน · กลับโตเกียว</p></header>
+<ol class="list">
+<li class="item"><p class="time">08:30 <small>น.</small></p><div class="what"><h3>ไปวิ่ง</h3></div></li>
+<li class="item"><p class="time">11:30 <small>น.</small></p><div class="what"><h3>Kadowaki Suspension Bridge (สะพานแขวนโจงาซากิ)</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Kadowaki Suspension Bridge</span></p><a class="map" href="https://maps.app.goo.gl/Moh35PDnRduTTWxU6" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Kadowaki Suspension Bridge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">13:00 <small>น.</small></p><div class="what"><h3>กินข้าว</h3></div></li>
+<li class="item"><p class="time">14:30 <small>น.</small></p><div class="what"><h3>Umihotaru PA  ถ้าเวลาเหลือ</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Umihotaru PA</span></p><a class="map" href="https://maps.app.goo.gl/D26SJVuTvH8ajRb87" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Umihotaru PA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item blank"><p class="time">15:30 <small>น.</small></p><div class="what"><h3 class="empty">ยังไม่ได้ระบุกิจกรรม</h3></div></li>
+<li class="item"><p class="time">16:00 <small>น.</small></p><div class="what"><h3>เข้าที่พัก 2-chōme-3-10 Kikukawa オパールアーツビル, Sumida City, จังหวัดโตเกียว 130-0024, ญี่ปุ่น</h3><p class="place"><b>สถานที่:</b> <span lang="ja">O.A.B(オパールアーツビル)</span></p><a class="map" href="https://maps.app.goo.gl/UvWYicKSbd85VZKv8" target="_blank" rel="noopener" aria-label="เปิดแผนที่ O.A.B(オパールアーツビル)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">17:00 <small>น.</small></p><div class="what"><h3>ออกมาหาข้าวกิน shopping kaiten sushi</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Kaiten Sushi Toriton</span></p><a class="map" href="https://maps.app.goo.gl/oeY1BifS92UgduQ4A" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Kaiten Sushi Toriton"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>วัดเซ็นโซ</h3></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>ลิงก์แผนที่เพิ่มเติม</h3><p class="note">ในแผนไม่ได้ระบุชื่อสถานที่</p><a class="map" href="https://maps.app.goo.gl/GCRycswEPPFNVepb6" target="_blank" rel="noopener" aria-label="เปิดแผนที่ เพิ่มเติม"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>Hinomaru</h3></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>joto curry</h3></div></li>
+</ol>
+<a class="top" href="#top">▲ กลับไปเลือกวัน</a>
+</section>
+<section class="day" id="d1204" data-date="2026-12-04" style="--c:#2f5d55" aria-labelledby="d1204-h">
+<header><p class="num">วันที่ 6 จาก 8</p><h2 id="d1204-h">วันศุกร์ที่ 4 ธ.ค. 2569</h2><p class="sub">แฮร์รี่ พอตเตอร์ · ชินจุกุ</p></header>
+<ol class="list">
+<li class="item"><p class="time">08:30 <small>น.</small></p><div class="what"><h3>ไปวิ่ง</h3></div></li>
+<li class="item"><p class="time">11:30 <small>น.</small></p><div class="what"><h3>The Making of Harry Potter - Warner Bros. Studio Tour Tokyo</h3><a class="map" href="https://maps.app.goo.gl/hNJjTsDDwhnwhmhg7" target="_blank" rel="noopener" aria-label="เปิดแผนที่ The Making of Harry Potter - Warner Bros. Studio Tour Tokyo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">16:00 <small>น.</small></p><div class="what"><h3>ไปเดินเล่น shinjuku (กินราเมง)</h3><a class="map" href="https://maps.app.goo.gl/ZZHSZsK5y6pvpffT7" target="_blank" rel="noopener" aria-label="เปิดแผนที่ ไปเดินเล่น shinjuku (กินราเมง)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>Umihotaru PA</h3><a class="map" href="https://maps.app.goo.gl/D26SJVuTvH8ajRb87" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Umihotaru PA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">19:00 <small>น.</small></p><div class="what"><h3>เดินเล่น</h3></div></li>
+<li class="item"><p class="time">21:00 <small>น.</small></p><div class="what"><h3>เข้าที่พัก 2-chōme-3-10 Kikukawa オパールアーツビル, Sumida City, จังหวัดโตเกียว 130-0024, ญี่ปุ่น</h3><p class="place"><b>สถานที่:</b> <span lang="ja">O.A.B(オパールアーツビル)</span></p><a class="map" href="https://maps.app.goo.gl/UvWYicKSbd85VZKv8" target="_blank" rel="noopener" aria-label="เปิดแผนที่ O.A.B(オパールアーツビル)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>ลิงก์แผนที่เพิ่มเติม</h3><p class="note">ในแผนไม่ได้ระบุชื่อสถานที่</p><a class="map" href="https://maps.app.goo.gl/GCRycswEPPFNVepb6" target="_blank" rel="noopener" aria-label="เปิดแผนที่ เพิ่มเติม"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+</ol>
+<a class="top" href="#top">▲ กลับไปเลือกวัน</a>
+</section>
+<section class="day" id="d1205" data-date="2026-12-05" style="--c:#2c5578" aria-labelledby="d1205-h">
+<header><p class="num">วันที่ 7 จาก 8</p><h2 id="d1205-h">วันเสาร์ที่ 5 ธ.ค. 2569</h2><p class="sub">วิ่ง · กินข้าว · เดินเล่น</p></header>
+<ol class="list">
+<li class="item"><p class="time">08:30 <small>น.</small></p><div class="what"><h3>ไปวิ่ง</h3></div></li>
+<li class="item blank"><p class="time">11:00 <small>น.</small></p><div class="what"><h3 class="empty">ยังไม่ได้ระบุกิจกรรม</h3></div></li>
+<li class="item"><p class="time">16:00 <small>น.</small></p><div class="what"><h3>กินข้าว</h3></div></li>
+<li class="item"><p class="time">17:00 <small>น.</small></p><div class="what"><h3>เข้าที่พัก</h3><p class="place"><b>สถานที่:</b> <span lang="ja">Umihotaru PA</span></p><a class="map" href="https://maps.app.goo.gl/D26SJVuTvH8ajRb87" target="_blank" rel="noopener" aria-label="เปิดแผนที่ Umihotaru PA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time">19:00 <small>น.</small></p><div class="what"><h3>เดินเล่น</h3></div></li>
+<li class="item"><p class="time">21:00 <small>น.</small></p><div class="what"><h3>เข้าที่พัก 2-chōme-3-10 Kikukawa オパールアーツビル, Sumida City, จังหวัดโตเกียว 130-0024, ญี่ปุ่น</h3><p class="place"><b>สถานที่:</b> <span lang="ja">O.A.B(オパールアーツビル)</span></p><a class="map" href="https://maps.app.goo.gl/UvWYicKSbd85VZKv8" target="_blank" rel="noopener" aria-label="เปิดแผนที่ O.A.B(オパールアーツビル)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>ลิงก์แผนที่เพิ่มเติม</h3><p class="note">ในแผนไม่ได้ระบุชื่อสถานที่</p><a class="map" href="https://maps.app.goo.gl/GCRycswEPPFNVepb6" target="_blank" rel="noopener" aria-label="เปิดแผนที่ เพิ่มเติม"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+</ol>
+<a class="top" href="#top">▲ กลับไปเลือกวัน</a>
+</section>
+<section class="day" id="d1206" data-date="2026-12-06" style="--c:#33426f" aria-labelledby="d1206-h">
+<header><p class="num">วันที่ 8 จาก 8</p><h2 id="d1206-h">วันอาทิตย์ที่ 6 ธ.ค. 2569</h2><p class="sub">เดินทางไปสนามบิน</p></header>
+<ol class="list">
+<li class="item"><p class="time">08:30 <small>น.</small></p><div class="what"><h3>O.A.B(オパールアーツビル)</h3><a class="map" href="https://maps.app.goo.gl/UvWYicKSbd85VZKv8" target="_blank" rel="noopener" aria-label="เปิดแผนที่ O.A.B(オパールアーツビル)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+<li class="item blank"><p class="time">11:00 <small>น.</small></p><div class="what"><h3 class="empty">ยังไม่ได้ระบุกิจกรรม</h3></div></li>
+<li class="item"><p class="time">14:00 <small>น.</small></p><div class="what"><h3>สนามบิน</h3></div></li>
+<li class="item"><p class="time none">ไม่ได้ระบุเวลา</p><div class="what"><h3>ลิงก์แผนที่เพิ่มเติม</h3><p class="note">ในแผนไม่ได้ระบุชื่อสถานที่</p><a class="map" href="https://maps.app.goo.gl/GCRycswEPPFNVepb6" target="_blank" rel="noopener" aria-label="เปิดแผนที่ เพิ่มเติม"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>เปิดแผนที่</span></a></div></li>
+</ol>
+<a class="top" href="#top">▲ กลับไปเลือกวัน</a>
+</section>
+</main>
+<footer>ขอให้เดินทางปลอดภัย และเที่ยวให้สนุกครับ 🍁❄️</footer>
+<script>
+(function(){
+ var root=document.documentElement,btns=document.querySelectorAll('.tools button');
+ function set(s){root.setAttribute('data-size',s);btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.s===s)})}
+ var s='1';try{s=localStorage.getItem('size')||'1'}catch(e){}
+ set(s);
+ btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.s);try{localStorage.setItem('size',b.dataset.s)}catch(e){}})});
+ try{var t=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+  var a=document.querySelector('.days a[data-date="'+t+'"]');if(a){a.classList.add('today');a.setAttribute('aria-current','date')}}catch(e){}
+})();
+</script>
+</body>
+</html>
